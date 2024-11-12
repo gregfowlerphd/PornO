@@ -1,0 +1,390 @@
+@prefix : <http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/> .
+
+<http://www.semanticweb.org/glfow/ontologies/2024/10/PornO> rdf:type owl:Ontology ;
+                                                             owl:imports <http://purl.obolibrary.org/obo/bfo/2020/bfo-core.ttl> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/obo/IAO_0000412
+<http://purl.obolibrary.org/obo/IAO_0000412> rdf:type owl:AnnotationProperty ;
+                                             rdfs:label "imported from"@en .
+
+
+###  https://www.commoncoreontologies.org/ont00001754
+<https://www.commoncoreontologies.org/ont00001754> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:label "definition source"@en .
+
+
+###  https://www.commoncoreontologies.org/ont00001760
+<https://www.commoncoreontologies.org/ont00001760> rdf:type owl:AnnotationProperty ;
+                                                   rdfs:label "is curated in ontology"@en .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://www.commoncoreontologies.org/ont00000003
+<https://www.commoncoreontologies.org/ont00000003> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000686> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Designative Name"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Name"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Designative Information Content Entity that consists of a string of characters that designates an entity within a specified cultural or social namespace and which is typically a word or phrase in a natural language that has an accepted cultural or social significance."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000005
+<https://www.commoncoreontologies.org/ont00000005> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000015> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Act"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Process in which at least one Agent plays a causative role."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000084
+<https://www.commoncoreontologies.org/ont00000084> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000024> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Bodily Component"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Fiat Object Part located within or on the surface of an Agent."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#example> "Bodily Components include anatomical structures, body flora, pathogens, toxins, and their combinations." ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3017014/" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000120
+<https://www.commoncoreontologies.org/ont00000120> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000853> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Measurement Unit"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Descriptive Information Content Entity that describes a definite magnitude of a physical quantity, defined and adopted by convention and/or by law, that is used as a standard for measurement of the same physical quantity."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Unit_of_measurement&oldid=1061038125"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000189
+<https://www.commoncoreontologies.org/ont00000189> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000798> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Certificate"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Information Bearing Artifact that bears an Information Content Entity which attests to certain demonstrated characteristics of an Object, Person, or Organization."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://www.dictionary.com/browse/degree" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000199
+<https://www.commoncoreontologies.org/ont00000199> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000771> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Camera"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Imaging Instrument that is designed to form and digitally or physically record an image of an entity."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://www.dictionary.com/browse/camera" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000228
+<https://www.commoncoreontologies.org/ont00000228> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000005> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Planned Act"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Intentional Act"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Act in which at least one Agent plays a causative role and which is prescribed by some Directive Information Content Entity held by at least one of the Agents."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000236
+<https://www.commoncoreontologies.org/ont00000236> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000995> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Lighting System"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Material Artifact that is designed to emit light within some area."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000253
+<https://www.commoncoreontologies.org/ont00000253> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Information Bearing Entity"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "IBE"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Object upon which an Information Content Entity generically depends."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://purl.obolibrary.org/obo/IAO_0000178"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000300
+<https://www.commoncoreontologies.org/ont00000300> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Group of Agents"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Object Aggregate that has only Agents as parts."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000472
+<https://www.commoncoreontologies.org/ont00000472> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000029> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Geospatial Region"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Site that is at or near the surface of the Earth."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/GeospatialOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000487
+<https://www.commoncoreontologies.org/ont00000487> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000472> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Geospatial Location"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Geospatial Region that is at which an Entity or Event is located."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/GeospatialOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000539
+<https://www.commoncoreontologies.org/ont00000539> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001022> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Count Measurement Information Content Entity"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Ratio Measurement Information Content Entity that is a measurement of the number of members of some aggregate."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000551
+<https://www.commoncoreontologies.org/ont00000551> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Organism"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Object that is an Animal or Plant."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000562
+<https://www.commoncoreontologies.org/ont00000562> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000551> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Animal"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Organism that is multicellular, eukaryotic, heterotrophic, and capable of motility for part of its life."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Animal&oldid=1063873549"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000686
+<https://www.commoncoreontologies.org/ont00000686> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000958> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Designative Information Content Entity"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Designative ICE"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Information Content Entity that consists of a set of symbols that denote some Entity."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000702
+<https://www.commoncoreontologies.org/ont00000702> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000798> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Image"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Information Bearing Artifact that is designed to carry an Information Content Entity that represents some entity owing to a visual isomorphism between the carrying artifact and the entity."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Image&oldid=1062709732"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000771
+<https://www.commoncoreontologies.org/ont00000771> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000995> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Imaging Instrument"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Material Artifact that is designed to produce images (visual representations) of an entity."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000774
+<https://www.commoncoreontologies.org/ont00000774> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000199> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Video Camera"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Camera that is designed to form and digitally or physically record a continuous stream of subsequent images of an entity or scene such that the images can be played back in succession as a video."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000798
+<https://www.commoncoreontologies.org/ont00000798> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000995> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Information Bearing Artifact"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Material Artifact that carries an Information Content Entity and is designed to do so using a particular format or structure."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000853
+<https://www.commoncoreontologies.org/ont00000853> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000958> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Descriptive Information Content Entity"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Descriptive ICE"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Information Content Entity that consists of a set of propositions that describe some Entity."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000869
+<https://www.commoncoreontologies.org/ont00000869> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000199> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Optical Camera"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Camera that is designed to form and record an image generated from visible light."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Camera&oldid=1063931551"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000874
+<https://www.commoncoreontologies.org/ont00000874> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000798> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Video"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Information Bearing Artifact that is designed to bear some specific Information Content Entity in the form of a sequence of representations that are presented sufficiently rapidly to create the appearance of motion and continuity."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Video&oldid=1049376249"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000914
+<https://www.commoncoreontologies.org/ont00000914> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000300> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Group of Persons"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Group of Agents that has only Persons as parts."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000958
+<https://www.commoncoreontologies.org/ont00000958> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Information Content Entity"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "ICE"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Generically Dependent Continuant that generically depends on some Information Bearing Entity and stands in relation of aboutness to some Entity."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Information Content Entity is here intended to be a class of Entities whose instances are the informational content of Information Bearing Entities. For example, three instances of information bearers -- such as a bar chart, color-coded map, and a written report -- each of which lists the GDP of Countries for the year 2010 are each different carriers of the same information content. It is this content that is generically dependent upon its carrier. This treatment of Informational Content Entity (cf. the Information Artifact Ontology) leads to a principle of subtyping based upon the relationship that ICE's have with the Entity they are about rather than characteristics such as format, language, measurement scale, or media. The latter are treated here as being Qualities of bearers."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://purl.obolibrary.org/obo/IAO_0000030" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000965
+<https://www.commoncoreontologies.org/ont00000965> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000958> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Directive Information Content Entity"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Directive ICE"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Information Content Entity that consists of a set of propositions or images (as in the case of a blueprint) that prescribe some Entity."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000995
+<https://www.commoncoreontologies.org/ont00000995> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Material Artifact"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Material Entity that was designed by some Agent to realize a certain Function."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001014
+<https://www.commoncoreontologies.org/ont00001014> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000003> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Proper Name"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Designative Name that is an official name for a particular entity."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001017
+<https://www.commoncoreontologies.org/ont00001017> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Agent"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Material Entity that bears an Agent Capability."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "Schlosser, Markus, \"Agency\", The Stanford Encyclopedia of Philosophy (Winter 2019 Edition), Edward N. Zalta (ed.), available at: https://plato.stanford.edu/archives/win2019/entries/agency/"@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001022
+<https://www.commoncoreontologies.org/ont00001022> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001163> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "Four of the subtypes of measurements used here (Interval, Nominal, Ordinal, and Ratio) were originally defined by S.S. Stevens in the article \"On the Theory of Scales of Measurement\" in Science, Vol. 103 No. 2684 on June 7, 1946. For an introductory article with links to additional content including criticisms and alternate classifications of measurements see https://en.wikipedia.org/wiki/Level_of_measurement"@en ;
+                                                   rdfs:label "Ratio Measurement Information Content Entity"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Measurement Information Content Entity that consists of a symbol that places a Quality of an Entity onto an interval scale having a true zero value."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#example> "The sentence \"The temperature reached 240.372 degrees Kelvin on January 20, 1985 in Chicago, IL.\" is the carrier of a ratio measurement as 0 degrees on the Kelvin scale does describe absolute zero."@en ,
+                                                                                                 "a measurement of the barometric pressure at 1,000 feet above sea level" ,
+                                                                                                 "a measurement of the measure of air temperature on the Kelvin scale" ,
+                                                                                                 "a measurement of the number of members in an Organization" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001034
+<https://www.commoncoreontologies.org/ont00001034> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000774> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Full Motion Video Camera"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Video Camera that is designed to capture and record images of sufficiently high quality and in rapid enough succession that the resulting video supports smooth playback."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001163
+<https://www.commoncoreontologies.org/ont00001163> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000853> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Measurement Information Content Entity"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Measurement ICE"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Descriptive Information Content Entity that describes the extent, dimensions, quantity, or quality of an Entity relative to some standard."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001180
+<https://www.commoncoreontologies.org/ont00001180> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000300> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "Members of organizations are either Organizations themselves or individual Persons. Members can bear specific Organization Member Roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the Organization by the organization members."@en ;
+                                                   rdfs:label "Organization"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Group of Agents which can be the bearer of roles, has members, and has a set of organization rules."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://purl.obolibrary.org/obo/OBI_0000245" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001262
+<https://www.commoncoreontologies.org/ont00001262> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000562> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Person"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Human"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Animal that is a member of the species Homo sapiens."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Human&oldid=1063145185"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001331
+<https://www.commoncoreontologies.org/ont00001331> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001014> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Legal Name"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Proper Name that is an official name for the designated entity as determined by a Government or court of law."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001379
+<https://www.commoncoreontologies.org/ont00001379> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000017> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Agent Capability"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Realizable Entity that inheres in a Material Entity in virtue of that Material Entity's capacity to realize it in some Planned Act."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "Schlosser, Markus, \"Agency\", The Stanford Encyclopedia of Philosophy (Winter 2019 Edition), Edward N. Zalta (ed.), available at: https://plato.stanford.edu/archives/win2019/entries/agency/"@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
