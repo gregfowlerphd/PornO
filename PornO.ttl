@@ -51,6 +51,25 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00000063
+<https://www.commoncoreontologies.org/ont00000063> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "This is a defined class."@en ;
+                                                   rdfs:label "Multi-Hour Temporal Interval"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A one-dimensional temporal region that is measured in Hours and spans at least one Hour."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000083
+<https://www.commoncoreontologies.org/ont00000083> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000035> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Process Ending"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Process Boundary that occurs on a Zero-Dimensional Temporal Region that is the ending instant of the One-Dimensional Temporal Region on which the Process, of which the Process Boundary is a part, occurs."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00000084
 <https://www.commoncoreontologies.org/ont00000084> rdf:type owl:Class ;
                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000024> ;
@@ -60,6 +79,16 @@
                                                    <http://www.w3.org/2004/02/skos/core#example> "Bodily Components include anatomical structures, body flora, pathogens, toxins, and their combinations." ;
                                                    <https://www.commoncoreontologies.org/ont00001754> "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3017014/" ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000085
+<https://www.commoncoreontologies.org/ont00000085> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Minute"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to sixty consecutive Seconds."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://wordnetweb.princeton.edu/perl/webwn?s=minute" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00000120
@@ -82,6 +111,15 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00000197
+<https://www.commoncoreontologies.org/ont00000197> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000035> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Process Beginning"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Process Boundary that occurs on a Zero-Dimensional Temporal Region that is the starting instant of the One-Dimensional Temporal Region on which the Process, of which the Process Boundary is a part, occurs."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00000199
 <https://www.commoncoreontologies.org/ont00000199> rdf:type owl:Class ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000771> ;
@@ -90,6 +128,27 @@
                                                    <http://www.w3.org/2004/02/skos/core#definition> "An Imaging Instrument that is designed to form and digitally or physically record an image of an entity."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001754> "http://www.dictionary.com/browse/camera" ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000211
+<https://www.commoncoreontologies.org/ont00000211> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "This is a defined class."@en ;
+                                                   rdfs:label "Multi-Day Temporal Interval"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A one-dimensional temporal region that is measured in Days and spans at least one Day."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000225
+<https://www.commoncoreontologies.org/ont00000225> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Month"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is based on the approximate length of time required for a Natural Satellite to complete one cycle of its rotational motion around its Primary Body."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Unless otherwise specified, it is assumed that a Month is specified relative to the Rotational Motion of the Moon around the Earth. Earth Months are approximately equal to four consecutive Weeks or 30 consecutive Days."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://wordnetweb.princeton.edu/perl/webwn?s=month" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00000228
@@ -131,6 +190,36 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00000323
+<https://www.commoncoreontologies.org/ont00000323> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Artifact Function"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Function that inheres in some Artifact in virtue of that Artifact being designed to be used in processes that require that Function to be realized."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000329
+<https://www.commoncoreontologies.org/ont00000329> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "This is a defined class."@en ;
+                                                   rdfs:label "Multi-Month Temporal Interval"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A one-dimensional temporal region that is measured in Months and spans at least one Month."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000449
+<https://www.commoncoreontologies.org/ont00000449> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001334> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "Comment: Remuneration normally consists of salary or hourly wages, but also applies to commission, stock options, fringe benefits, etc."@en ;
+                                                   rdfs:label "Act of Remuneration"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Act of Purchasing wherein a Financial Instrument is used by an Agent (the Employer) to compensate another Agent (the Employee) for the services they perform for the Employer."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Remuneration&oldid=1033306001"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00000472
 <https://www.commoncoreontologies.org/ont00000472> rdf:type owl:Class ;
                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000029> ;
@@ -147,6 +236,16 @@
                                                    rdfs:label "Geospatial Location"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Geospatial Region that is at which an Entity or Event is located."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/GeospatialOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000506
+<https://www.commoncoreontologies.org/ont00000506> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Contractor Role"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Role that inheres in an Agent or Group of Agents by virtue of that Agent or Group of Agents entering into a Contract to provide materials or labor to perform a service or complete a task."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "A Contractor Role differs from an Occupation Role in at least two ways. First, the Contract that binds the two parties together is not one of employment. Second, a Contractor Role is occupationally neutral in that an Agent can be contracted to perform any number of Occupational Roles."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00000539
@@ -175,6 +274,34 @@
                                                    <http://www.w3.org/2004/02/skos/core#definition> "An Organism that is multicellular, eukaryotic, heterotrophic, and capable of motility for part of its life."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Animal&oldid=1063873549"^^xsd:anyURI ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000566
+<https://www.commoncoreontologies.org/ont00000566> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000228> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Act of Artifact Employment"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Planned Act of using an Artifact."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000601
+<https://www.commoncoreontologies.org/ont00000601> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000323> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Imaging Artifact Function"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Artifact Function that inheres in Artifacts that are designed to produce visual representations of entities."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000619
+<https://www.commoncoreontologies.org/ont00000619> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Week"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to seven consecutive Days."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://wordnetweb.princeton.edu/perl/webwn?s=week" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00000686
@@ -224,6 +351,47 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00000800
+<https://www.commoncoreontologies.org/ont00000800> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Day"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to the approximate length of time required for an Astronomical Body to complete one rotation around its Rotational Axis as specified relative to a particular Temporal Reference System."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Unless otherwise specified, a Day is assumed to be relative to the rotational motion of the Earth and is approximately equal to a twenty-four hour temporal region for which the start and end times are specified by the Temporal Reference System used."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://wordnetweb.princeton.edu/perl/webwn?s=day" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000810
+<https://www.commoncoreontologies.org/ont00000810> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "This is a defined class."@en ;
+                                                   rdfs:label "Multi-Week Temporal Interval"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A one-dimensional temporal region that is measured in Weeks and spans at least one Week."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000832
+<https://www.commoncoreontologies.org/ont00000832> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Year"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to the approximate length of time required for an Astronomical Body to complete one Orbital Revolution around its Primary Body as specified relative to a particular Temporal Reference System."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Unless otherwise specified, a Year is assumed to be relative to the Orbiting of the Earth around the Sun and is approximately equal to 12 Months or 365 Days."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://wordnetweb.princeton.edu/perl/webwn?s=year" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000836
+<https://www.commoncoreontologies.org/ont00000836> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Act of Financial Instrument Use"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Act of Artifact Employment in which some Agent uses some Financial Instrument."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00000853
 <https://www.commoncoreontologies.org/ont00000853> rdf:type owl:Class ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000958> ;
@@ -263,6 +431,15 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00000935
+<https://www.commoncoreontologies.org/ont00000935> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Act of Legal Instrument Use"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Act of Artifact Employment in which some Agent uses some Legal Instrument."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00000958
 <https://www.commoncoreontologies.org/ont00000958> rdf:type owl:Class ;
                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
@@ -283,6 +460,17 @@
                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "Directive ICE"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "An Information Content Entity that consists of a set of propositions or images (as in the case of a blueprint) that prescribe some Entity."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000992
+<https://www.commoncoreontologies.org/ont00000992> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "The Second is used as the basic SI unit of time."@en ;
+                                                   rdfs:label "Second"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to the duration of 9,192,631,770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the cesium 133 atom."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://physics.nist.gov/cuu/Units/second.html" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00000995
@@ -336,6 +524,35 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00001058
+<https://www.commoncoreontologies.org/ont00001058> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Hour"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to sixty consecutive Minutes."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://wordnetweb.princeton.edu/perl/webwn?s=hour" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001154
+<https://www.commoncoreontologies.org/ont00001154> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "This is a defined class."@en ;
+                                                   rdfs:label "Multi-Second Temporal Interval"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A one-dimensional temporal region that is measured in Seconds and spans at least one Second."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001155
+<https://www.commoncoreontologies.org/ont00001155> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000601> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Full Motion Video Imaging Artifact Function"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Imaging Artifact Function that inheres in Artifacts that are designed to produce video of entities that is of high enough quality to make the represented motion appear continuous to human viewers."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00001163
 <https://www.commoncoreontologies.org/ont00001163> rdf:type owl:Class ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000853> ;
@@ -344,6 +561,16 @@
                                                    <http://www.w3.org/2004/02/skos/core#altLabel> "Measurement ICE"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Descriptive Information Content Entity that describes the extent, dimensions, quantity, or quality of an Entity relative to some standard."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001166
+<https://www.commoncoreontologies.org/ont00001166> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "This is a defined class."@en ;
+                                                   rdfs:label "Multi-Minute Temporal Interval"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A one-dimensional temporal region that is measured in Minutes and spans at least one Minute."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00001180
@@ -355,6 +582,16 @@
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Group of Agents which can be the bearer of roles, has members, and has a set of organization rules."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001754> "http://purl.obolibrary.org/obo/OBI_0000245" ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001206
+<https://www.commoncoreontologies.org/ont00001206> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "This is a defined class."@en ;
+                                                   rdfs:label "Multi-Year Temporal Interval"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A one-dimensional temporal region that is measured in Years and spans at least one Year."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00001262
@@ -375,6 +612,26 @@
                                                    rdfs:label "Legal Name"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Proper Name that is an official name for the designated entity as determined by a Government or court of law."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001334
+<https://www.commoncoreontologies.org/ont00001334> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000836> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Act of Purchasing"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Act of Financial Instrument Use wherein a Financial Instrument is used by an Agent (the Purchaser) to acquire a good or service from another Agent (the Provider)."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Purchasing&oldid=1050163120"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/EventOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001346
+<https://www.commoncoreontologies.org/ont00001346> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000995> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Legal Instrument"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Material Artifact that is designed as a formally executed written document that can be formally attributed to its author, records and formally expresses a legally enforceable act, process, or contractual duty, obligation, or right, and therefore evidences that act, process, or agreement."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "https://en.wikipedia.org/w/index.php?title=Legal_instrument&oldid=1054387344"^^xsd:anyURI ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00001379
