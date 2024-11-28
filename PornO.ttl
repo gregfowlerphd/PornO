@@ -26,6 +26,12 @@
 <http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ontologyDevelopmentNote
+:ontologyDevelopmentNote rdf:type owl:AnnotationProperty ;
+                         rdfs:label "ontology development note"@en ;
+                         rdfs:subPropertyOf <http://www.w3.org/2004/02/skos/core#editorialNote> .
+
+
 ###  http://www.w3.org/2004/02/skos/core#editorialNote
 <http://www.w3.org/2004/02/skos/core#editorialNote> rdf:type owl:AnnotationProperty .
 
@@ -392,6 +398,37 @@
 
 ###  http://purl.obolibrary.org/obo/BFO_0000001
 <http://purl.obolibrary.org/obo/BFO_0000001> rdfs:subClassOf owl:Thing .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultPerformer
+:AdultPerformer rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
+                rdfs:label "Adult Performer"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Adult Performer Role."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultPerformerRole
+:AdultPerformerRole rdf:type owl:Class ;
+                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000506> ;
+                    :ontologyDevelopmentNote "Complete definition."@en ;
+                    rdfs:label "Adult Performer Role"@en ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role that..."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ContentCreator
+:ContentCreator rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
+                rdfs:label "Content Creator"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears a Content Creator Role."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ContentCreatorRole
+:ContentCreatorRole rdf:type owl:Class ;
+                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                    :ontologyDevelopmentNote "Complete definition."@en ,
+                                             "Maybe create new class Self-Employment Role and make Content Creator Role a subclass of it."@en ;
+                    rdfs:label "Content Creator Role"@en ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "A Role that..."@en .
 
 
 ###  https://www.commoncoreontologies.org/ont00000003
