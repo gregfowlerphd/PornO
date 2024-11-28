@@ -403,6 +403,7 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultPerformer
 :AdultPerformer rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
+                :ontologyDevelopmentNote "Add axioms."@en ;
                 rdfs:label "Adult Performer"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Adult Performer Role."@en .
 
@@ -418,6 +419,7 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ContentCreator
 :ContentCreator rdf:type owl:Class ;
                 rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
+                :ontologyDevelopmentNote "Add axioms."@en ;
                 rdfs:label "Content Creator"@en ;
                 <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears a Content Creator Role."@en .
 
