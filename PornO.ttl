@@ -400,6 +400,13 @@
 <http://purl.obolibrary.org/obo/BFO_0000001> rdfs:subClassOf owl:Thing .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmStudio
+:AdultFilmStudio rdf:type owl:Class ;
+                 rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001180> ;
+                 :ontologyDevelopmentNote "Needs definition"@en ;
+                 rdfs:label "Adult Film Studio"@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultPerformer
 :AdultPerformer rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
@@ -418,10 +425,31 @@
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultPerformerRole
 :AdultPerformerRole rdf:type owl:Class ;
-                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000506> ;
-                    :ontologyDevelopmentNote "Complete definition."@en ;
+                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000506> ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                      owl:someValuesFrom [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000228>
+                                                                                [ rdf:type owl:Restriction ;
+                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000132> ;
+                                                                                  owl:someValuesFrom :AdultShoot
+                                                                                ]
+                                                                              ) ;
+                                                           rdf:type owl:Class
+                                                         ]
+                                    ] ,
+                                    [ rdf:type owl:Restriction ;
+                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                      owl:someValuesFrom :AdultPerformer
+                                    ] ;
                     rdfs:label "Adult Performer Role"@en ;
-                    <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role that..."@en .
+                    <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role that inheres in an Adult Performer both by virtue of that Performer entering into a contract with an Adult Film Studio to engage, as part of an Adult Shoot, in explicit sexual activity while being filmed with a Video Camera and by virtue of the Performer fulfilling such a contract, and is realized both by processes in which the Performer does the latter and by Acts of Purchasing in which the Performer is compensated by a Studio for doing so."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultShoot
+:AdultShoot rdf:type owl:Class ;
+            rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
+            :ontologyDevelopmentNote "Needs definition."@en ;
+            rdfs:label "Adult Shoot"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ContentCreator
