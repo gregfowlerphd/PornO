@@ -429,9 +429,16 @@
                                     [ rdf:type owl:Restriction ;
                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
                                       owl:someValuesFrom [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000228>
-                                                                                [ rdf:type owl:Restriction ;
-                                                                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000132> ;
-                                                                                  owl:someValuesFrom :AdultShoot
+                                                                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                                         owl:someValuesFrom :AdultPerformer
+                                                                                                       ]
+                                                                                                       [ rdf:type owl:Restriction ;
+                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000132> ;
+                                                                                                         owl:someValuesFrom :AdultShoot
+                                                                                                       ]
+                                                                                                     ) ;
+                                                                                  rdf:type owl:Class
                                                                                 ]
                                                                               ) ;
                                                            rdf:type owl:Class
@@ -442,7 +449,7 @@
                                       owl:someValuesFrom :AdultPerformer
                                     ] ;
                     rdfs:label "Adult Performer Role"@en ;
-                    <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role that inheres in an Adult Performer both by virtue of that Performer entering into a contract with an Adult Film Studio to engage, as part of an Adult Shoot, in explicit sexual activity while being filmed with a Video Camera and by virtue of the Performer fulfilling such a contract, and is realized both by processes in which the Performer does the latter and by Acts of Purchasing in which the Performer is compensated by a Studio for doing so."@en .
+                    <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role that inheres in an Adult Performer by virtue of that Performer fulfilling a contract with an Adult Film Studio to engage, as part of an Adult Shoot, in explicit sexual activity while being filmed with a Video Camera, and is realized both by processes in which the Performer fulfills such a contract and by Acts of Purchasing in which the Performer is compensated by a Studio for doing so."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultShoot
