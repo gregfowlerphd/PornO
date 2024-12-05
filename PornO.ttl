@@ -410,17 +410,23 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultPerformer
 :AdultPerformer rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
-                                                             owl:someValuesFrom :AdultPerformerRole
+                                                           [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                    owl:someValuesFrom :AdultPerformerRole
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                    owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001379>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001017> ,
-                                <https://www.commoncoreontologies.org/ont00001262> ;
+                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
                 rdfs:label "Adult Performer"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Adult Performer Role."@en .
+                <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Agent Capability and an Adult Performer Role."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultPerformerRole
@@ -462,17 +468,23 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ContentCreator
 :ContentCreator rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
-                                                           [ rdf:type owl:Restriction ;
-                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
-                                                             owl:someValuesFrom :ContentCreatorRole
+                                                           [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                    owl:someValuesFrom :ContentCreatorRole
+                                                                                  ]
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                    owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001379>
+                                                                                  ]
+                                                                                ) ;
+                                                             rdf:type owl:Class
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
                                     ] ;
-                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001017> ,
-                                <https://www.commoncoreontologies.org/ont00001262> ;
+                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
                 rdfs:label "Content Creator"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears a Content Creator Role."@en .
+                <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Agent Capability and a Content Creator Role."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ContentCreatorRole
@@ -984,6 +996,14 @@
 
 ###  https://www.commoncoreontologies.org/ont00001017
 <https://www.commoncoreontologies.org/ont00001017> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000040>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001379>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000040> ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Agent"@en ;
