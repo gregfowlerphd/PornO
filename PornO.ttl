@@ -400,108 +400,108 @@
 <http://purl.obolibrary.org/obo/BFO_0000001> rdfs:subClassOf owl:Thing .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreator
+:AdultContentCreator rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
+                                                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                         owl:someValuesFrom :AdultContentCreatorRole
+                                                                                       ]
+                                                                                       [ rdf:type owl:Restriction ;
+                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                         owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001379>
+                                                                                       ]
+                                                                                     ) ;
+                                                                  rdf:type owl:Class
+                                                                ]
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
+                     rdfs:label "Adult Content Creator"@en ;
+                     <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Agent Capability and an Adult Content Creator Role."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreatorRole
+:AdultContentCreatorRole rdf:type owl:Class ;
+                         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                         :ontologyDevelopmentNote "Complete definition."@en ,
+                                                  "Maybe create new class Self-Employment Role and make Content Creator Role a subclass of it."@en ;
+                         rdfs:label "Adult Content Creator Role"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "A Role that..."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmPerformer
+:AdultFilmPerformer rdf:type owl:Class ;
+                    owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
+                                                               [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                        owl:someValuesFrom :AdultFilmPerformerRole
+                                                                                      ]
+                                                                                      [ rdf:type owl:Restriction ;
+                                                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                        owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001379>
+                                                                                      ]
+                                                                                    ) ;
+                                                                 rdf:type owl:Class
+                                                               ]
+                                                             ) ;
+                                          rdf:type owl:Class
+                                        ] ;
+                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
+                    rdfs:comment "\"Adult Film Performer\" was chosen as the official label for this class over the alternative labels for the following reasons. First, there is a general preference in the ontology for \"adult film\" talk over \"pornography\" talk. Second, \"pornographic film actor\" and \"porn star\" are misleading, the first because not every adult film requires acting and the second because it (like \"movie star\") suggests widespread fame that needn't be present."@en ;
+                    rdfs:label "Adult Film Performer"@en ;
+                    <http://www.w3.org/2004/02/skos/core#altLabel> "pornographic film actor"@en ,
+                                                                   "pornographic performer"@en ,
+                                                                   "porn star" ;
+                    <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Agent Capability and an Adult Film Performer Role."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmPerformerRole
+:AdultFilmPerformerRole rdf:type owl:Class ;
+                        rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000506> ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                          owl:someValuesFrom [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000228>
+                                                                                    [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                                             owl:someValuesFrom :AdultFilmPerformer
+                                                                                                           ]
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                                                             owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000774>
+                                                                                                           ]
+                                                                                                           [ rdf:type owl:Restriction ;
+                                                                                                             owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000132> ;
+                                                                                                             owl:someValuesFrom :AdultFilmShoot
+                                                                                                           ]
+                                                                                                         ) ;
+                                                                                      rdf:type owl:Class
+                                                                                    ]
+                                                                                  ) ;
+                                                               rdf:type owl:Class
+                                                             ]
+                                        ] ,
+                                        [ rdf:type owl:Restriction ;
+                                          owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                          owl:someValuesFrom :AdultFilmPerformer
+                                        ] ;
+                        rdfs:label "Adult Film Performer Role"@en ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role that inheres in an Adult Film Performer by virtue of that Performer fulfilling a contract with an Adult Film Studio to engage, as part of an Adult Film Shoot, in explicit sexual activity while being recorded with a Video Camera, and is realized both by processes in which the Performer fulfills such a contract and by Acts of Purchasing in which the Performer is compensated by a Studio for doing so."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmShoot
+:AdultFilmShoot rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
+                :ontologyDevelopmentNote "Needs definition."@en ;
+                rdfs:label "Adult Film Shoot"@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmStudio
 :AdultFilmStudio rdf:type owl:Class ;
                  rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001180> ;
                  :ontologyDevelopmentNote "Needs definition"@en ;
                  rdfs:label "Adult Film Studio"@en .
-
-
-###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultPerformer
-:AdultPerformer rdf:type owl:Class ;
-                owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
-                                                           [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
-                                                                                    owl:someValuesFrom :AdultPerformerRole
-                                                                                  ]
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
-                                                                                    owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001379>
-                                                                                  ]
-                                                                                ) ;
-                                                             rdf:type owl:Class
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] ;
-                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
-                rdfs:comment "\"Adult Film Performer\" was chosen as the official label for this class over the alternative labels for the following reasons. First, there is a general preference in the ontology for \"adult film\" talk over \"pornography\" talk. Second, \"pornographic film actor\" and \"porn star\" are misleading, the first because not every adult film requires acting and the second because it (like \"movie star\") suggests widespread fame that needn't be present."@en ;
-                rdfs:label "Adult Film Performer"@en ;
-                <http://www.w3.org/2004/02/skos/core#altLabel> "pornographic film actor"@en ,
-                                                               "pornographic performer"@en ,
-                                                               "porn star" ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Agent Capability and an Adult Film Performer Role."@en .
-
-
-###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultPerformerRole
-:AdultPerformerRole rdf:type owl:Class ;
-                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000506> ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
-                                      owl:someValuesFrom [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000228>
-                                                                                [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
-                                                                                                         owl:someValuesFrom :AdultPerformer
-                                                                                                       ]
-                                                                                                       [ rdf:type owl:Restriction ;
-                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
-                                                                                                         owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000774>
-                                                                                                       ]
-                                                                                                       [ rdf:type owl:Restriction ;
-                                                                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000132> ;
-                                                                                                         owl:someValuesFrom :AdultShoot
-                                                                                                       ]
-                                                                                                     ) ;
-                                                                                  rdf:type owl:Class
-                                                                                ]
-                                                                              ) ;
-                                                           rdf:type owl:Class
-                                                         ]
-                                    ] ,
-                                    [ rdf:type owl:Restriction ;
-                                      owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
-                                      owl:someValuesFrom :AdultPerformer
-                                    ] ;
-                    rdfs:label "Adult Film Performer Role"@en ;
-                    <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role that inheres in an Adult Film Performer by virtue of that Performer fulfilling a contract with an Adult Film Studio to engage, as part of an Adult Film Shoot, in explicit sexual activity while being recorded with a Video Camera, and is realized both by processes in which the Performer fulfills such a contract and by Acts of Purchasing in which the Performer is compensated by a Studio for doing so."@en .
-
-
-###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultShoot
-:AdultShoot rdf:type owl:Class ;
-            rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
-            :ontologyDevelopmentNote "Needs definition."@en ;
-            rdfs:label "Adult Film Shoot"@en .
-
-
-###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ContentCreator
-:ContentCreator rdf:type owl:Class ;
-                owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
-                                                           [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
-                                                                                    owl:someValuesFrom :ContentCreatorRole
-                                                                                  ]
-                                                                                  [ rdf:type owl:Restriction ;
-                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
-                                                                                    owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001379>
-                                                                                  ]
-                                                                                ) ;
-                                                             rdf:type owl:Class
-                                                           ]
-                                                         ) ;
-                                      rdf:type owl:Class
-                                    ] ;
-                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
-                rdfs:label "Adult Content Creator"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Agent Capability and an Adult Content Creator Role."@en .
-
-
-###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ContentCreatorRole
-:ContentCreatorRole rdf:type owl:Class ;
-                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                    :ontologyDevelopmentNote "Complete definition."@en ,
-                                             "Maybe create new class Self-Employment Role and make Content Creator Role a subclass of it."@en ;
-                    rdfs:label "Adult Content Creator Role"@en ;
-                    <http://www.w3.org/2004/02/skos/core#definition> "A Role that..."@en .
 
 
 ###  https://www.commoncoreontologies.org/ont00000003
