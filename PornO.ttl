@@ -451,10 +451,10 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreatorRole
 :AdultContentCreatorRole rdf:type owl:Class ;
                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                         :ontologyDevelopmentNote "Complete definition."@en ,
-                                                  "Maybe create new class Self-Employment Role and make Content Creator Role a subclass of it."@en ;
+                         :ontologyDevelopmentNote "Current definition is provisional."@en ,
+                                                  "Formulate axioms."@en ;
                          rdfs:label "Adult Content Creator Role"@en ;
-                         <http://www.w3.org/2004/02/skos/core#definition> "A Role that..."@en .
+                         <http://www.w3.org/2004/02/skos/core#definition> "A Role that inheres in a Person who bears an Agent Capability by virtue of that Person posting an Adult Photograph or Adult Film of themselves on an Adult Content Creator Platform using a Content Creator Account that Person has on that Platform, and is realized both by processes in which that Person does such posting and by processes in which that Person receives financial compensation from a Platform for their activity on it."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmPerformer
