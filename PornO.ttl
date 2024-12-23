@@ -400,6 +400,14 @@
 <http://purl.obolibrary.org/obo/BFO_0000001> rdfs:subClassOf owl:Thing .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfAdultFilmPerformance
+:ActOfAdultFilmPerformance rdf:type owl:Class ;
+                           rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
+                           :ontologyDevelopmentNote "Needs axioms."@en ;
+                           rdfs:label "Act of Adult Film Performance"@en ;
+                           <http://www.w3.org/2004/02/skos/core#definition> "An Act of Artifact Employment consisting of a Person engaging in explicit sexual activity while being recorded with a Video Camera, as prescribed by a contract between that person and an Adult Film Studio."@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfCameraUse
 :ActOfCameraUse rdf:type owl:Class ;
                 rdfs:subClassOf :ActOfImagingInstrumentUse ,
@@ -519,8 +527,9 @@
                                                                rdf:type owl:Class
                                                              ]
                                         ] ;
+                        :ontologyDevelopmentNote "Modify axioms in response to revised definition."@en ;
                         rdfs:label "Adult Film Performer Role"@en ;
-                        <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role that inheres in a Person who bears an Agent Capability by virtue of that Person fulfilling a contract with an Adult Film Studio to engage, as part of an Adult Film Shoot, in explicit sexual activity while being recorded with a Video Camera, and is realized both by processes in which that Person fulfills such a contract and by Acts of Purchasing in which they are compensated by a Studio for doing so."@en .
+                        <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role which inheres in a Person who bears an Agent Capability by virtue of that Person engaging in an Act of Adult Film Performance and which is realized both by the Person engaging in such Acts and by Acts of Purchasing in which they are compensated by an Adult Film Studio for doing so."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmProductionProcess
