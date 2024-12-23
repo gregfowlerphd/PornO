@@ -402,7 +402,7 @@
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfAdultFilmPerformance
 :ActOfAdultFilmPerformance rdf:type owl:Class ;
-                           rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
+                           rdfs:subClassOf :ActOfVideoCameraUse ;
                            :ontologyDevelopmentNote "Needs axioms."@en ;
                            rdfs:label "Act of Adult Film Performance"@en ;
                            <http://www.w3.org/2004/02/skos/core#definition> "An Act of Artifact Employment consisting of a Person engaging in explicit sexual activity while being recorded with a Video Camera, as prescribed by a contract between that person and an Adult Film Studio."@en .
