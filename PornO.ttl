@@ -50,6 +50,15 @@
 #    Object Properties
 #################################################################
 
+###  http://purl.obolibrary.org/obo/BFO_0000196
+<http://purl.obolibrary.org/obo/BFO_0000196> rdf:type owl:ObjectProperty ,
+                                                      owl:InverseFunctionalProperty .
+
+
+###  http://purl.obolibrary.org/obo/BFO_0000197
+<http://purl.obolibrary.org/obo/BFO_0000197> rdf:type owl:FunctionalProperty .
+
+
 ###  https://www.commoncoreontologies.org/ont00001787
 <https://www.commoncoreontologies.org/ont00001787> rdf:type owl:ObjectProperty ;
                                                    rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000056> ;
@@ -441,6 +450,13 @@
                            <http://www.w3.org/2004/02/skos/core#definition> "An Act of Artifact Employment in which some Agent uses some Imaging Instrument."@en .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfOpeningAnAdultContentCreatorAccount
+:ActOfOpeningAnAdultContentCreatorAccount rdf:type owl:Class ;
+                                          rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
+                                          :ontologyDevelopmentNote "Definition and axioms needed."@en ;
+                                          rdfs:label "Act of Opening an Adult Content Creator Account"@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfVideoCameraUse
 :ActOfVideoCameraUse rdf:type owl:Class ;
                      rdfs:subClassOf :ActOfCameraUse ,
@@ -454,7 +470,7 @@
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreator
 :AdultContentCreator rdf:type owl:Class ;
-                     owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
+                     owl:equivalentClass [ owl:intersectionOf ( :AdultContentCreatorAccountHolder
                                                                 [ rdf:type owl:Restriction ;
                                                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
                                                                   owl:someValuesFrom :AdultContentCreatorRole
@@ -462,16 +478,51 @@
                                                               ) ;
                                            rdf:type owl:Class
                                          ] ;
-                     rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
+                     rdfs:subClassOf :AdultContentCreatorAccountHolder ;
                      rdfs:label "Adult Content Creator"@en ;
-                     <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Adult Content Creator Role."@en .
+                     <http://www.w3.org/2004/02/skos/core#definition> "An Adult Content Creator Account Holder who bears an Adult Content Creator Role."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreatorAccountHolder
 :AdultContentCreatorAccountHolder rdf:type owl:Class ;
+                                  owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
+                                                                             [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                               owl:someValuesFrom :AdultContentCreatorAccountHolderRole
+                                                                             ]
+                                                                           ) ;
+                                                        rdf:type owl:Class
+                                                      ] ;
                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
-                                  :ontologyDevelopmentNote "Needs definition and axioms."@en ;
-                                  rdfs:label "Adult Content Creator Account Holder"@en .
+                                  rdfs:label "Adult Content Creator Account Holder"@en ;
+                                  <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Adult Content Creator Account Holder Role."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreatorAccountHolderRole
+:AdultContentCreatorAccountHolderRole rdf:type owl:Class ;
+                                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                                        owl:someValuesFrom :ActOfOpeningAnAdultContentCreatorAccount
+                                                      ] ,
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                        owl:someValuesFrom [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                    owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001379>
+                                                                                                  ]
+                                                                                                  [ rdf:type owl:Restriction ;
+                                                                                                    owl:onProperty <https://www.commoncoreontologies.org/ont00001787> ;
+                                                                                                    owl:someValuesFrom :ActOfOpeningAnAdultContentCreatorAccount
+                                                                                                  ]
+                                                                                                ) ;
+                                                                             rdf:type owl:Class
+                                                                           ]
+                                                      ] ;
+                                      :ontologyDevelopmentNote "Add note concerning RRs."@en ;
+                                      rdfs:label "Adult Content Creator Account Holder Role"@en ;
+                                      <http://www.w3.org/2004/02/skos/core#definition> "A Role which inheres in a Person who bears an Agent Capability by virtue of that Person engaging in an Act of Opening an Adult Content Creator Account and which is realized by that very act."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreatorRole
@@ -484,11 +535,6 @@
                                          [ rdf:type owl:Restriction ;
                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
                                            owl:someValuesFrom [ owl:intersectionOf ( :AdultContentCreatorAccountHolder
-                                                                                     <https://www.commoncoreontologies.org/ont00001262>
-                                                                                     [ rdf:type owl:Restriction ;
-                                                                                       owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
-                                                                                       owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001379>
-                                                                                     ]
                                                                                      [ rdf:type owl:Restriction ;
                                                                                        owl:onProperty <https://www.commoncoreontologies.org/ont00001787> ;
                                                                                        owl:someValuesFrom :ActOfAdultContentCreatorPosting
@@ -498,7 +544,7 @@
                                                               ]
                                          ] ;
                          rdfs:label "Adult Content Creator Role"@en ;
-                         <http://www.w3.org/2004/02/skos/core#definition> "A Role which inheres in a Person who bears an Agent Capability by virtue of that Person being an Adult Content Creator Account Holder and engaging in an Act of Adult Content Creator Posting and which is realized both by the Person engaging in such Acts and by Acts of Financial Instrument Use in which they are compensated by an Adult Content Creator Platform for their activity on it."@en .
+                         <http://www.w3.org/2004/02/skos/core#definition> "A Role which inheres in an Adult Content Creator Account Holder by virtue of that Holder engaging in an Act of Adult Content Creator Posting and which is realized both by the Holder engaging in such Acts and by Acts of Financial Instrument Use in which they are compensated by an Adult Content Creator Platform for their activity on it."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmPerformer
@@ -549,9 +595,8 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmProductionProcess
 :AdultFilmProductionProcess rdf:type owl:Class ;
                             rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
-                            :ontologyDevelopmentNote "Complete definition."@en ;
-                            rdfs:label "Adult Film Production Process"@en ,
-                                       "An Act of Artifact Employment in which..."@en .
+                            :ontologyDevelopmentNote "Definition and axioms needed."@en ;
+                            rdfs:label "Adult Film Production Process"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmShoot
