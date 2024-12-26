@@ -51,12 +51,7 @@
 #################################################################
 
 ###  http://purl.obolibrary.org/obo/BFO_0000196
-<http://purl.obolibrary.org/obo/BFO_0000196> rdf:type owl:ObjectProperty ,
-                                                      owl:InverseFunctionalProperty .
-
-
-###  http://purl.obolibrary.org/obo/BFO_0000197
-<http://purl.obolibrary.org/obo/BFO_0000197> rdf:type owl:FunctionalProperty .
+<http://purl.obolibrary.org/obo/BFO_0000196> rdf:type owl:ObjectProperty .
 
 
 ###  https://www.commoncoreontologies.org/ont00001787
@@ -382,6 +377,15 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00001983
+<https://www.commoncoreontologies.org/ont00001983> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <https://www.commoncoreontologies.org/ont00001966> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "is a ratio measurement of"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "x is_a_ratio_measurement_of y iff x is an instance of Information Content Entity and y is an instance of Entity, such that x describes some attribute of y relative to a scale having equal unit values and a zero value that corresponds to the absence of the attribute being measured."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00001992
 <https://www.commoncoreontologies.org/ont00001992> rdf:type owl:ObjectProperty ;
                                                    rdfs:subPropertyOf owl:topObjectProperty ;
@@ -425,7 +429,7 @@
                                            ] ;
                            rdfs:comment "An Act of Adult Film Performance consists solely of the sexually explicit activity engaged in. This activity must be recorded with a Video Camera and be prescribed by a contract to \"count\" as an Act of Adult Film Performance. However, in typical cases, neither the Camera nor the contract plays a part in the activity itself and hence isn't a participant in the Act of Adult Film Performance."@en ;
                            rdfs:label "Act of Adult Film Performance"@en ;
-                           <http://www.w3.org/2004/02/skos/core#definition> "A Planned Act consisting of a Person engaging in explicit sexual activity, while being recorded with a Video Camera and as prescribed by a contract between that person and an Adult Film Studio."@en .
+                           <http://www.w3.org/2004/02/skos/core#definition> "A Planned Act consisting of a Person engaging in explicit sexual activity, while being recorded with a Video Camera and as prescribed by a contract between that Person and an Adult Film Studio."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfCameraUse
@@ -525,6 +529,13 @@
                                       <http://www.w3.org/2004/02/skos/core#definition> "A Role which inheres in a Person who bears an Agent Capability by virtue of that Person engaging in an Act of Opening an Adult Content Creator Account and which is realized by that very act."@en .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreatorPlatform
+:AdultContentCreatorPlatform rdf:type owl:Class ;
+                             rdfs:subClassOf :Website ;
+                             :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+                             rdfs:label "Adult Content Creator Platform"@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreatorRole
 :AdultContentCreatorRole rdf:type owl:Class ;
                          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ,
@@ -545,6 +556,28 @@
                                          ] ;
                          rdfs:label "Adult Content Creator Role"@en ;
                          <http://www.w3.org/2004/02/skos/core#definition> "A Role which inheres in an Adult Content Creator Account Holder by virtue of that Holder engaging in an Act of Adult Content Creator Posting and which is realized both by the Holder engaging in such Acts and by Acts of Financial Instrument Use in which they are compensated by an Adult Content Creator Platform for their activity on it."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmDirector
+:AdultFilmDirector rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                owl:someValuesFrom :AdultFilmDirectorRole
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
+                   rdfs:label "Adult Film Director"@en ;
+                   <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Adult Film Director Role."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmDirectorRole
+:AdultFilmDirectorRole rdf:type owl:Class ;
+                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                       :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+                       rdfs:label "Adult Film Director Role"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmPerformer
@@ -617,9 +650,45 @@
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmStudio
 :AdultFilmStudio rdf:type owl:Class ;
-                 rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001180> ;
-                 :ontologyDevelopmentNote "Needs definition"@en ;
+                 rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000443> ;
+                 :ontologyDevelopmentNote "Needs definition and axioms."@en ;
                  rdfs:label "Adult Film Studio"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultTalentAgent
+:AdultTalentAgent rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                               owl:someValuesFrom :AdultTalentAgentRole
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001262> ;
+                  rdfs:label "Adult Talent Agent"@en ;
+                  <http://www.w3.org/2004/02/skos/core#definition> "A Person who bears an Adult Talent Agent Role."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultTalentAgentRole
+:AdultTalentAgentRole rdf:type owl:Class ;
+                      rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                      :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+                      rdfs:label "Adult Talent Agent Role"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultTubeSite
+:AdultTubeSite rdf:type owl:Class ;
+               rdfs:subClassOf :Website ;
+               :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+               rdfs:label "Adult Tube Site"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/Website
+:Website rdf:type owl:Class ;
+         rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
+         :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+         rdfs:label "Website"@en .
 
 
 ###  https://www.commoncoreontologies.org/ont00000003
@@ -828,6 +897,23 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00000443
+<https://www.commoncoreontologies.org/ont00000443> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001180>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000196> ;
+                                                                                                owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000485>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001180> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Commercial Organization"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Organization that is the bearer of a Commercial Role and whose primary objective is to make a profit from the provision of goods or services."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00000449
 <https://www.commoncoreontologies.org/ont00000449> rdf:type owl:Class ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001334> ;
@@ -846,6 +932,15 @@
                                                    rdfs:label "Geospatial Region"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Site that is at or near the surface of the Earth."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/GeospatialOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00000485
+<https://www.commoncoreontologies.org/ont00000485> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Commercial Role"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Role that inheres in an Organization by virtue of its establishment as a for-profit business."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00000487
@@ -947,6 +1042,14 @@
 
 ###  https://www.commoncoreontologies.org/ont00000686
 <https://www.commoncoreontologies.org/ont00000686> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000958>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <https://www.commoncoreontologies.org/ont00001916> ;
+                                                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000001>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000958> ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Designative Information Content Entity"@en ;
@@ -1026,7 +1129,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000836
 <https://www.commoncoreontologies.org/ont00000836> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000537>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Act of Financial Instrument Use"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "An Act of Artifact Employment in which some Agent uses some Financial Instrument."@en ;
@@ -1035,6 +1142,14 @@
 
 ###  https://www.commoncoreontologies.org/ont00000853
 <https://www.commoncoreontologies.org/ont00000853> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000958>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <https://www.commoncoreontologies.org/ont00001982> ;
+                                                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000001>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000958> ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Descriptive Information Content Entity"@en ;
@@ -1074,7 +1189,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000935
 <https://www.commoncoreontologies.org/ont00000935> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001346>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Act of Legal Instrument Use"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "An Act of Artifact Employment in which some Agent uses some Legal Instrument."@en ;
@@ -1083,6 +1202,14 @@
 
 ###  https://www.commoncoreontologies.org/ont00000958
 <https://www.commoncoreontologies.org/ont00000958> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000031>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <https://www.commoncoreontologies.org/ont00001808> ;
+                                                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000001>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Information Content Entity"@en ;
@@ -1095,6 +1222,14 @@
 
 ###  https://www.commoncoreontologies.org/ont00000965
 <https://www.commoncoreontologies.org/ont00000965> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000958>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <https://www.commoncoreontologies.org/ont00001942> ;
+                                                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000001>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000958> ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Directive Information Content Entity"@en ;
@@ -1152,6 +1287,14 @@
 
 ###  https://www.commoncoreontologies.org/ont00001022
 <https://www.commoncoreontologies.org/ont00001022> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001163>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <https://www.commoncoreontologies.org/ont00001983> ;
+                                                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000001>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001163> ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:comment "Four of the subtypes of measurements used here (Interval, Nominal, Ordinal, and Ratio) were originally defined by S.S. Stevens in the article \"On the Theory of Scales of Measurement\" in Science, Vol. 103 No. 2684 on June 7, 1946. For an introductory article with links to additional content including criticisms and alternate classifications of measurements see https://en.wikipedia.org/wiki/Level_of_measurement"@en ;
@@ -1204,6 +1347,14 @@
 
 ###  https://www.commoncoreontologies.org/ont00001163
 <https://www.commoncoreontologies.org/ont00001163> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000853>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <https://www.commoncoreontologies.org/ont00001966> ;
+                                                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000001>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000853> ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Measurement Information Content Entity"@en ;
@@ -1235,6 +1386,14 @@
 
 ###  https://www.commoncoreontologies.org/ont00001203
 <https://www.commoncoreontologies.org/ont00001203> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000472>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <https://www.commoncoreontologies.org/ont00001864> ;
+                                                                                                owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001180>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
                                                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000472> ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    <http://purl.org/dc/terms/created> "2022-12-30T21:32:27-05:00"^^xsd:dateTime ;
