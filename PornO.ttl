@@ -73,6 +73,16 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00001795
+<https://www.commoncoreontologies.org/ont00001795> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <https://www.commoncoreontologies.org/ont00001924> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "has inside interval"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval INT2 has inside interval some Temporal Interval INT1 iff there exist Temporal Instants inst1, inst2, inst3, and inst4 such that inst1 is the starting instant of INT1, inst2 is the ending instant of INT1, inst3 is the starting instant of INT2, inst4 is the ending instant of INT2, inst3 is before inst1, and inst2 is before inst4."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "J. F. Allen and J. A. G. M. Koomen. Planning using a temporal world model. In Proceedings of the 8th International Joint Conference on Artificial Intelligence (IJCAI-1983)  pages 741–747. Available at: https://www.ijcai.org/Proceedings/83-2/Papers/036.pdf"@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00001798
 <https://www.commoncoreontologies.org/ont00001798> rdf:type owl:ObjectProperty ;
                                                    rdfs:subPropertyOf <https://www.commoncoreontologies.org/ont00001939> ;
@@ -198,6 +208,16 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00001869
+<https://www.commoncoreontologies.org/ont00001869> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <https://www.commoncoreontologies.org/ont00001971> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "interval during"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval INT1 is during some Temporal Interval INT2 iff there exist Temporal Instants inst1, inst2, inst3, and inst4 such that inst1 is the starting instant of INT1, inst2 is the ending instant of INT1, inst3 is the starting instant of INT2, inst4 is the ending instant of INT2, inst3 is before inst1, and inst2 is before inst4."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "J. F. Allen and J. A. G. M. Koomen. Planning using a temporal world model. In Proceedings of the 8th International Joint Conference on Artificial Intelligence (IJCAI-1983)  pages 741–747. Available at: https://www.ijcai.org/Proceedings/83-2/Papers/036.pdf"@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00001874
 <https://www.commoncoreontologies.org/ont00001874> rdf:type owl:ObjectProperty ;
                                                    rdfs:subPropertyOf owl:topObjectProperty ;
@@ -285,6 +305,16 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00001924
+<https://www.commoncoreontologies.org/ont00001924> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "interval contains"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval INT2 contains some Temporal Interval INT1 iff there exist Temporal Instants inst1, inst2, inst3, and inst4 such that inst1 is the starting instant of INT1, inst2 is the ending instant of INT1, inst3 is the starting instant of INT2, inst4 is the ending instant of INT2, inst3 is before or identical to inst1, and inst2 is before or identical to inst4, but it is not the case that both inst3 is identical to inst1 and inst2 is identical to inst4."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "J. F. Allen and J. A. G. M. Koomen. Planning using a temporal world model. In Proceedings of the 8th International Joint Conference on Artificial Intelligence (IJCAI-1983)  pages 741–747. Available at: https://www.ijcai.org/Proceedings/83-2/Papers/036.pdf"@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00001925
 <https://www.commoncoreontologies.org/ont00001925> rdf:type owl:ObjectProperty ;
                                                    rdfs:subPropertyOf owl:topObjectProperty ;
@@ -343,6 +373,16 @@
                                                    <http://www.w3.org/2004/02/skos/core#definition> "x is_a_measurement_of y iff x is an instance of Information Content Entity and y is an instance of Entity, such that x describes some attribute of y relative to some scale or classification scheme."@en ;
                                                    <http://www.w3.org/2004/02/skos/core#scopeNote> "Given a stronger temporal interpretation, this property may be functional. For more info please refer to https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/temporal%20extensions."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001971
+<https://www.commoncoreontologies.org/ont00001971> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf owl:topObjectProperty ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "interval contained by"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval INT1 is contained by some Temporal Interval INT2 iff there exist Temporal Instants inst1, inst2, inst3, and inst4 such that inst1 is the starting instant of INT1, inst2 is the ending instant of INT1, inst3 is the starting instant of INT2, inst4 is the ending instant of INT2, inst3 is before or identical to inst1, inst2 is before or identical to inst4, and it is not the case that both inst3 is identical to inst1 and inst2 is identical to inst4."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "J. F. Allen and J. A. G. M. Koomen. Planning using a temporal world model. In Proceedings of the 8th International Joint Conference on Artificial Intelligence (IJCAI-1983)  pages 741–747. Available at: https://www.ijcai.org/Proceedings/83-2/Papers/036.pdf"@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00001974
@@ -427,7 +467,7 @@
                                              owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
                                              owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001262>
                                            ] ;
-                           rdfs:comment "An Act of Adult Film Performance consists solely of the sexually explicit activity engaged in. This activity must be recorded with a Video Camera and be prescribed by a contract to \"count\" as an Act of Adult Film Performance. However, in typical cases, neither the Camera nor the contract plays a part in the activity itself and hence isn't a participant in the Act of Adult Film Performance."@en ;
+                           rdfs:comment "An Act of Adult Film Performance consists solely of the explicit sexual activity engaged in. This activity must be recorded with a Video Camera and be prescribed by a contract to \"count\" as an Act of Adult Film Performance. However, in typical cases, neither the Camera nor the contract plays a part in the activity itself and hence isn't a participant in the Act of Adult Film Performance."@en ;
                            rdfs:label "Act of Adult Film Performance"@en ;
                            <http://www.w3.org/2004/02/skos/core#definition> "A Planned Act consisting of a Person engaging in explicit sexual activity, while being recorded with a Video Camera and as prescribed by a contract between that Person and an Adult Film Studio."@en .
 
@@ -712,7 +752,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000063
 <https://www.commoncoreontologies.org/ont00000063> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001924> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001058>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:comment "This is a defined class."@en ;
                                                    rdfs:label "Multi-Hour Temporal Interval"@en ;
@@ -742,7 +786,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000085
 <https://www.commoncoreontologies.org/ont00000085> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001869> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001058>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Minute"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to sixty consecutive Seconds."@en ;
@@ -801,7 +849,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000211
 <https://www.commoncoreontologies.org/ont00000211> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001924> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000800>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:comment "This is a defined class."@en ;
                                                    rdfs:label "Multi-Day Temporal Interval"@en ;
@@ -811,7 +863,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000225
 <https://www.commoncoreontologies.org/ont00000225> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001869> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000832>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Month"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is based on the approximate length of time required for a Natural Satellite to complete one cycle of its rotational motion around its Primary Body."@en ;
@@ -841,6 +897,14 @@
 
 ###  https://www.commoncoreontologies.org/ont00000253
 <https://www.commoncoreontologies.org/ont00000253> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <http://purl.obolibrary.org/obo/BFO_0000030>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000101> ;
+                                                                                                owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000958>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
                                                    rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000030> ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Information Bearing Entity"@en ;
@@ -852,7 +916,18 @@
 
 ###  https://www.commoncoreontologies.org/ont00000300
 <https://www.commoncoreontologies.org/ont00000300> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000027> ,
+                                                                   [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000115> ;
+                                                                                            owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001017>
+                                                                                          ]
+                                                                                          [ rdf:type owl:Restriction ;
+                                                                                            owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000115> ;
+                                                                                            owl:allValuesFrom <https://www.commoncoreontologies.org/ont00001017>
+                                                                                          ]
+                                                                                        ) ;
+                                                                     rdf:type owl:Class
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Group of Agents"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "An Object Aggregate that has only Agents as parts."@en ;
@@ -861,7 +936,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000323
 <https://www.commoncoreontologies.org/ont00000323> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000034> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000995>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Artifact Function"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Function that inheres in some Artifact in virtue of that Artifact being designed to be used in processes that require that Function to be realized."@en ;
@@ -870,22 +949,16 @@
 
 ###  https://www.commoncoreontologies.org/ont00000329
 <https://www.commoncoreontologies.org/ont00000329> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001924> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000225>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:comment "This is a defined class."@en ;
                                                    rdfs:label "Multi-Month Temporal Interval"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A one-dimensional temporal region that is measured in Months and spans at least one Month."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
-
-
-###  https://www.commoncoreontologies.org/ont00000387
-<https://www.commoncoreontologies.org/ont00000387> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000026> ;
-                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
-                                                   rdfs:label "Axis of Rotation"@en ;
-                                                   <http://www.w3.org/2004/02/skos/core#altLabel> "Rotational Axis"@en ;
-                                                   <http://www.w3.org/2004/02/skos/core#definition> "A One-Dimensional Spatial Region defined by the line around which a spinning body rotates."@en ;
-                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/GeospatialOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00000398
@@ -1032,7 +1105,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000619
 <https://www.commoncoreontologies.org/ont00000619> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001869> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000225>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Week"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to seven consecutive Days."@en ;
@@ -1088,7 +1165,15 @@
 
 ###  https://www.commoncoreontologies.org/ont00000798
 <https://www.commoncoreontologies.org/ont00000798> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000995> ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000995> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000101> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000958>
+                                                                   ] ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000176> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000893>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Information Bearing Artifact"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Material Artifact that carries an Information Content Entity and is designed to do so using a particular format or structure."@en ;
@@ -1097,7 +1182,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000800
 <https://www.commoncoreontologies.org/ont00000800> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001869> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000619>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Day"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to the approximate length of time required for an Astronomical Body to complete one rotation around its Rotational Axis as specified relative to a particular Temporal Reference System."@en ;
@@ -1108,7 +1197,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000810
 <https://www.commoncoreontologies.org/ont00000810> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001924> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000619>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:comment "This is a defined class."@en ;
                                                    rdfs:label "Multi-Week Temporal Interval"@en ;
@@ -1118,7 +1211,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000832
 <https://www.commoncoreontologies.org/ont00000832> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001869> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001088>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Year"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to the approximate length of time required for an Astronomical Body to complete one Orbital Revolution around its Primary Body as specified relative to a particular Temporal Reference System."@en ;
@@ -1178,9 +1275,29 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00000893
+<https://www.commoncoreontologies.org/ont00000893> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000995> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "An empty notebook, when manufactured, is a medium but not yet a carrier of information content. However, a book, in the sense of a novel or collection of philosophical essays or poems, depends necessarily on it carrying some information content. Thus, there are no empty books. Likewise, there are no empty databases, only portions of digital storage that have not yet been configured to carry some information content according to a database software application."@en ;
+                                                   rdfs:label "Information Medium Artifact"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Material Artifact that is designed to have some Information Bearing Artifact as part."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#example> "A magnetic hard drive" ,
+                                                                                                 "A notebook" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/ArtifactOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00000914
 <https://www.commoncoreontologies.org/ont00000914> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000300> ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000300> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001262>
+                                                                   ] ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000178> ;
+                                                                     owl:allValuesFrom <https://www.commoncoreontologies.org/ont00001262>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Group of Persons"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Group of Agents that has only Persons as parts."@en ;
@@ -1240,7 +1357,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00000992
 <https://www.commoncoreontologies.org/ont00000992> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001869> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000085>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:comment "The Second is used as the basic SI unit of time."@en ;
                                                    rdfs:label "Second"@en ;
@@ -1318,7 +1439,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00001058
 <https://www.commoncoreontologies.org/ont00001058> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001869> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000800>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Hour"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to sixty consecutive Minutes."@en ;
@@ -1326,9 +1451,23 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00001088
+<https://www.commoncoreontologies.org/ont00001088> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000202> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Decade"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to a period of ten consecutive Years."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001754> "http://wordnetweb.princeton.edu/perl/webwn?s=decade" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00001154
 <https://www.commoncoreontologies.org/ont00001154> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001924> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000992>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:comment "This is a defined class."@en ;
                                                    rdfs:label "Multi-Second Temporal Interval"@en ;
@@ -1365,7 +1504,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00001166
 <https://www.commoncoreontologies.org/ont00001166> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001924> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000085>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:comment "This is a defined class."@en ;
                                                    rdfs:label "Multi-Minute Temporal Interval"@en ;
@@ -1406,7 +1549,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00001206
 <https://www.commoncoreontologies.org/ont00001206> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ;
+                                                   rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000038> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001924> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00000832>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:comment "This is a defined class."@en ;
                                                    rdfs:label "Multi-Year Temporal Interval"@en ;
@@ -1467,7 +1614,11 @@
 
 ###  https://www.commoncoreontologies.org/ont00001335
 <https://www.commoncoreontologies.org/ont00001335> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001180> ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001180> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001859> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001203>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    <http://purl.org/dc/terms/creator> "https://cubrc.org"^^xsd:anyURI ;
                                                    rdfs:label "Government"@en ;
