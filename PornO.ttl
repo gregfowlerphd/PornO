@@ -247,6 +247,17 @@
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
 
 
+###  https://www.commoncoreontologies.org/ont00001873
+<https://www.commoncoreontologies.org/ont00001873> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <https://www.commoncoreontologies.org/ont00001801> ;
+                                                   owl:inverseOf <https://www.commoncoreontologies.org/ont00001938> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "See notes for inverse property." ;
+                                                   rdfs:label "represented by"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "y represented_by x iff x is an instance of Information Content Entity, and y is an instance of Entity, and z is carrier of x, such that x is about y in virtue of there existing an isomorphism between characteristics of z and y."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
+
+
 ###  https://www.commoncoreontologies.org/ont00001874
 <https://www.commoncoreontologies.org/ont00001874> rdf:type owl:ObjectProperty ;
                                                    rdfs:subPropertyOf owl:topObjectProperty ;
@@ -363,6 +374,19 @@
                                                    rdfs:label "is used by"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "x is_used_by y iff y is an instance of an Agent and x is an instance of a Material Entity, such that both x and y participate in some instance of a Process wherein y attempts to accomplish a goal by manipulating, deploying, leveraging some attribute of y."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001938
+<https://www.commoncoreontologies.org/ont00001938> rdf:type owl:ObjectProperty ;
+                                                   rdfs:subPropertyOf <https://www.commoncoreontologies.org/ont00001808> ;
+                                                   rdfs:domain <https://www.commoncoreontologies.org/ont00001069> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:comment "Isomorphism between the carrier of x and the represented entity can be via a direct similarity relation, e.g., grooves in a vinyl record corresponding to sound waves, or linguistic convention, e.g., a court stenographer's transcription of spoken words, as well as others, such as encoding processes for images."@en ;
+                                                   rdfs:label "represents"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "x represents y iff x is an instance of Information Content Entity, y is an instance of Entity, and z is carrier of x, such that x is about y in virtue of there existing an isomorphism between characteristics of z and y."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#scopeNote> "Given a stronger temporal interpretation, this property may be functional. For more info please refer to https://github.com/BFO-ontology/BFO-2020/tree/master/src/owl/temporal%20extensions."@en ,
+                                                                                                   "The relationship that is being defined here is that between the content of a photographic image and its object, between the content of a video and its objects and events, between the content of an audio recording and the sounds or events generating those sounds, or between the content of a written transcript and the verbal event that it transcribes."@en ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00001939
@@ -528,6 +552,13 @@
                                  rdfs:label "Act of Adult Content Creator Posting"@en .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfAdultFilmDirection
+:ActOfAdultFilmDirection rdf:type owl:Class ;
+                         rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000228> ;
+                         :ontologyDevelopmentNote "Definition and axioms needed."@en ;
+                         rdfs:label "Act of Adult Film Direction"@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfAdultFilmPerformance
 :ActOfAdultFilmPerformance rdf:type owl:Class ;
                            rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000228> ,
@@ -578,6 +609,13 @@
                                      ] ;
                      rdfs:label "Act of Video Camera Use"@en ;
                      <http://www.w3.org/2004/02/skos/core#definition> "An Act of Camera Use in which some Agent uses some Video Camera."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultAwardShow
+:AdultAwardShow rdf:type owl:Class ;
+                rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000228> ;
+                :ontologyDevelopmentNote "Definition and axioms needed."@en ;
+                rdfs:label "Adult Award Show"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreator
@@ -640,7 +678,7 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreatorPlatform
 :AdultContentCreatorPlatform rdf:type owl:Class ;
                              rdfs:subClassOf :Website ;
-                             :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+                             :ontologyDevelopmentNote "Definition and axioms needed"@en ;
                              rdfs:label "Adult Content Creator Platform"@en .
 
 
@@ -684,8 +722,15 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmDirectorRole
 :AdultFilmDirectorRole rdf:type owl:Class ;
                        rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                       :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+                       :ontologyDevelopmentNote "Definition and axioms needed."@en ;
                        rdfs:label "Adult Film Director Role"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmDistributor
+:AdultFilmDistributor rdf:type owl:Class ;
+                      rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000443> ;
+                      :ontologyDevelopmentNote "Definition and axioms needed."@en ;
+                      rdfs:label "Adult Film Distributor"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmPerformer
@@ -759,8 +804,15 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmStudio
 :AdultFilmStudio rdf:type owl:Class ;
                  rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000443> ;
-                 :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+                 :ontologyDevelopmentNote "Definition and axioms needed."@en ;
                  rdfs:label "Adult Film Studio"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultTalentAgency
+:AdultTalentAgency rdf:type owl:Class ;
+                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000443> ;
+                   :ontologyDevelopmentNote "Definition and axioms needed."@en ;
+                   rdfs:label "Adult Talent Agency"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultTalentAgent
@@ -781,15 +833,29 @@
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultTalentAgentRole
 :AdultTalentAgentRole rdf:type owl:Class ;
                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                      :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+                      :ontologyDevelopmentNote "Definition and axioms needed."@en ;
                       rdfs:label "Adult Talent Agent Role"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultTubeSite
 :AdultTubeSite rdf:type owl:Class ;
                rdfs:subClassOf :Website ;
-               :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+               :ontologyDevelopmentNote "Definition and axioms needed."@en ;
                rdfs:label "Adult Tube Site"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/FilmingLocation
+:FilmingLocation rdf:type owl:Class ;
+                 rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000487> ;
+                 :ontologyDevelopmentNote "Definition and axioms needed."@en ;
+                 rdfs:label "Filming Location"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/OfficialAdultFilmTitle
+:OfficialAdultFilmTitle rdf:type owl:Class ;
+                        rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001014> ;
+                        :ontologyDevelopmentNote "Definition and axioms needed."@en ;
+                        rdfs:label "Official Adult Film Title"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/Website
@@ -1540,6 +1606,27 @@
                                                    <http://www.w3.org/2004/02/skos/core#definition> "A Temporal Interval that is equal to sixty consecutive Minutes."@en ;
                                                    <https://www.commoncoreontologies.org/ont00001754> "http://wordnetweb.princeton.edu/perl/webwn?s=hour" ;
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/TimeOntology"^^xsd:anyURI .
+
+
+###  https://www.commoncoreontologies.org/ont00001069
+<https://www.commoncoreontologies.org/ont00001069> rdf:type owl:Class ;
+                                                   owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000958>
+                                                                                              [ rdf:type owl:Restriction ;
+                                                                                                owl:onProperty <https://www.commoncoreontologies.org/ont00001938> ;
+                                                                                                owl:someValuesFrom <http://purl.obolibrary.org/obo/BFO_0000001>
+                                                                                              ]
+                                                                                            ) ;
+                                                                         rdf:type owl:Class
+                                                                       ] ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000958> ;
+                                                   owl:disjointWith <https://www.commoncoreontologies.org/ont00001163> ;
+                                                   <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
+                                                   rdfs:label "Representational Information Content Entity"@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#definition> "An Information Content Entity that represents some Entity."@en ;
+                                                   <http://www.w3.org/2004/02/skos/core#example> "the content of a court transcript represents a courtroom proceeding" ,
+                                                                                                 "the content of a photograph of the Statue of Liberty represents the Statue of Liberty" ,
+                                                                                                 "the content of a video of a sporting event represents that sporting event" ;
+                                                   <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/InformationEntityOntology"^^xsd:anyURI .
 
 
 ###  https://www.commoncoreontologies.org/ont00001088
