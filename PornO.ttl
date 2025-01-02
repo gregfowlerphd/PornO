@@ -670,7 +670,9 @@
                                                                              rdf:type owl:Class
                                                                            ]
                                                       ] ;
-                                      :ontologyDevelopmentNote "Add note concerning RRs."@en ;
+                                      :ontologyDevelopmentNote """A Relational Role class, modeled after the BFO class Relational Quality and hence defined as being a role that specifically depends on multiple entities, might be added as a child class of Role, and I believe that Adult Content Creator Account Holder Role is a natural candidate for a subclass of it. The idea is that every instance of Adult Content Creator Account Holder Role specifically depends on both a Person and an Adult Content Creator Platform. However, given that Adult Content Creator Platform is a(n indirect) subclass of Generically Dependent Continuant, this idea conflicts with the range restriction on specifically depends on and hence will probably not be pursued.
+
+For more on relational roles, see https://www.linkedin.com/in/gregfowlerphd/details/projects/1725311894546/single-media-viewer/?profileId=ACoAAEslrxMBDmxoV92nTTvYF51MCovotge6Sr4."""@en ;
                                       rdfs:label "Adult Content Creator Account Holder Role"@en ;
                                       <http://www.w3.org/2004/02/skos/core#definition> "A Role which inheres in a Person who bears an Agent Capability by virtue of that Person engaging in an Act of Opening an Adult Content Creator Account and which is realized by that very act."@en .
 
@@ -702,6 +704,18 @@
                                          ] ;
                          rdfs:label "Adult Content Creator Role"@en ;
                          <http://www.w3.org/2004/02/skos/core#definition> "A Role which inheres in an Adult Content Creator Account Holder by virtue of that Holder engaging in an Act of Adult Content Creator Posting and which is realized both by the Holder engaging in such Acts and by Acts of Financial Instrument Use in which they are compensated by an Adult Content Creator Platform for their activity on it."@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilm
+:AdultFilm rdf:type owl:Class ;
+           rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001069> ;
+           :ontologyDevelopmentNote "Definition and axioms needed."@en ,
+                                    """The placement of this class is provisional. A Representational ICE must, by definition, represent some Entity, and it's not clear that every Adult Film does so. While every Adult Film has a carrier with characteristics isomorphic to those of, e.g., the Adult Film Performers who appear in the Film (thus satisfying one of the \"represents\" definition's conditions for representing those Performers), it would seem that not every Adult Film is about those Performers (in which case it wouldn't satisfy a further condition). Instead, in some cases, an Adult Film seems to be about characters played by the Performers rather than the Performers themselves.
+
+Similar remarks apply to other Entities an Adult Film might be thought to represent, including Acts of Adult Film Performance, sets, props, etc.
+
+For further discussion of issues concerning ICEs and fiction, see https://github.com/CommonCoreOntology/CommonCoreOntologies/discussions/562."""@en ;
+           rdfs:label "Adult Film"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmDirector
@@ -853,9 +867,17 @@
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/OfficialAdultFilmTitle
 :OfficialAdultFilmTitle rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001014>
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <https://www.commoncoreontologies.org/ont00001916> ;
+                                                                     owl:someValuesFrom :AdultFilm
+                                                                   ]
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
                         rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001014> ;
-                        :ontologyDevelopmentNote "Definition and axioms needed."@en ;
-                        rdfs:label "Official Adult Film Title"@en .
+                        rdfs:label "Official Adult Film Title"@en ;
+                        <http://www.w3.org/2004/02/skos/core#definition> "A Proper Name that designates an Adult Film."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/Website
