@@ -814,15 +814,23 @@ For further discussion of issues concerning ICEs and fiction, see https://github
                 rdfs:subClassOf :ActOfVideoCameraUse ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
-                                  owl:someValuesFrom :AdultFilmPerformer
+                                  owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001262>
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom :ActOfAdultFilmPerformance
+                                ] ,
+                                [ rdf:type owl:Restriction ;
+                                  owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000117> ;
+                                  owl:someValuesFrom :ActOfAdultFilmRecording
                                 ] ,
                                 [ rdf:type owl:Restriction ;
                                   owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000132> ;
                                   owl:someValuesFrom :AdultFilmProductionProcess
                                 ] ;
-                :ontologyDevelopmentNote "Modify definition in light of introduction of Act of Adult Film Performance."@en ;
+                rdfs:comment "In addition to Acts of Adult Film Performance and Adult Film Recording, an Adult Film Shoot often has Acts of Adult Film Direction as parts."@en ;
                 rdfs:label "Adult Film Shoot"@en ;
-                <http://www.w3.org/2004/02/skos/core#definition> "An Act of Video Camera Use which is part of some Adult Film Production Process and in which an Adult Film Performer engages in explicit sexual activity while being recorded with a Video Camera, in fulfillment of a contract with an Adult Film Studio."@en .
+                <http://www.w3.org/2004/02/skos/core#definition> "An Act of Video Camera Use which is the part of an Adult Film Production Process consisting of all and only those processes directly involved in the creation of an Adult Video, including at a minimum an Act of Adult Film Performance and an Act of Adult Film Recording."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmStudio
