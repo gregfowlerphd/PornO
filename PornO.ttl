@@ -718,14 +718,18 @@ For more on relational roles, see https://www.linkedin.com/in/gregfowlerphd/deta
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilm
 :AdultFilm rdf:type owl:Class ;
-           rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001069> ;
-           :ontologyDevelopmentNote "Definition and axioms needed."@en ,
-                                    """The placement of this class is provisional. A Representational ICE must, by definition, represent some Entity, and it's not clear that every Adult Film does so. While every Adult Film has a carrier with characteristics isomorphic to those of, e.g., the Adult Film Performers who appear in the Film (thus satisfying one of the \"represents\" definition's conditions for representing those Performers), it would seem that not every Adult Film is about those Performers (in which case it wouldn't satisfy a further condition). Instead, in some cases, an Adult Film seems to be about characters played by the Performers rather than the Performers themselves.
+           rdfs:subClassOf <https://www.commoncoreontologies.org/ont00001069> ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty <https://www.commoncoreontologies.org/ont00001938> ;
+                             owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001262>
+                           ] ;
+           :ontologyDevelopmentNote """The placement of this class is provisional. A Representational ICE must, by definition, represent some Entity, and it's not clear that every Adult Film does. While every Adult Film has a carrier with characteristics isomorphic to those of, e.g., a Person appearing in the Film (thus satisfying one of the \"represents\" definition's conditions for representing that Person), it would seem that not every Adult Film is about such a Person (in which case it wouldn't satisfy a further condition). Instead, in some cases, an Adult Film seems to be about a character played by such a Person rather than the Person themselves. And similar considerations seem to apply to other Entities an Adult Film might be thought to represent, including Acts of Adult Film Performance, sets, props, etc.
 
-Similar remarks apply to other Entities an Adult Film might be thought to represent, including Acts of Adult Film Performance, sets, props, etc.
+For similar reasons, the definition and axiom are also provisional.
 
-For further discussion of issues concerning ICEs and fiction, see https://github.com/CommonCoreOntology/CommonCoreOntologies/discussions/562."""@en ;
-           rdfs:label "Adult Film"@en .
+Further discussion of issues concerning fiction in the context of BFO and CCO can be found here: https://github.com/CommonCoreOntology/CommonCoreOntologies/discussions/562."""@en ;
+           rdfs:label "Adult Film"@en ;
+           <http://www.w3.org/2004/02/skos/core#definition> "A Representational Information Content Entity consisting, in part or in whole, of a sequence of visual representations of a Person engaging in explicit sexual activity."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmDirector
@@ -874,6 +878,21 @@ For further discussion of issues concerning ICEs and fiction, see https://github
                rdfs:subClassOf :Website ;
                :ontologyDevelopmentNote "Definition and axioms needed."@en ;
                rdfs:label "Adult Tube Site"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultVideo
+:AdultVideo rdf:type owl:Class ;
+            owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000874>
+                                                       [ rdf:type owl:Restriction ;
+                                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000101> ;
+                                                         owl:someValuesFrom :AdultFilm
+                                                       ]
+                                                     ) ;
+                                  rdf:type owl:Class
+                                ] ;
+            rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000874> ;
+            rdfs:label "Adult Video"@en ;
+            <http://www.w3.org/2004/02/skos/core#definition> "A Video that carries some Adult Film."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/FilmingLocation
@@ -1464,7 +1483,11 @@ For further discussion of issues concerning ICEs and fiction, see https://github
 
 ###  https://www.commoncoreontologies.org/ont00000874
 <https://www.commoncoreontologies.org/ont00000874> rdf:type owl:Class ;
-                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000798> ;
+                                                   rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000798> ,
+                                                                   [ rdf:type owl:Restriction ;
+                                                                     owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000101> ;
+                                                                     owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001069>
+                                                                   ] ;
                                                    <http://purl.obolibrary.org/obo/IAO_0000412> "https://www.commoncoreontologies.org/2024-11-06/CommonCoreOntologiesMerged" ;
                                                    rdfs:label "Video"@en ;
                                                    <http://www.w3.org/2004/02/skos/core#definition> "An Information Bearing Artifact that is designed to bear some specific Information Content Entity in the form of a sequence of representations that are presented sufficiently rapidly to create the appearance of motion and continuity."@en ;
@@ -1867,4 +1890,4 @@ For further discussion of issues concerning ICEs and fiction, see https://github
                                                    <https://www.commoncoreontologies.org/ont00001760> "https://www.commoncoreontologies.org/AgentOntology"^^xsd:anyURI .
 
 
-###  Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
