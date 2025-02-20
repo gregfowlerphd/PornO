@@ -844,6 +844,13 @@ Further discussion of issues concerning fiction in the context of BFO and CCO ca
                  rdfs:label "Adult Film Studio"@en .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmingLocation
+:AdultFilmingLocation rdf:type owl:Class ;
+                      rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000487> ;
+                      rdfs:label "Adult Filming Location"@en ;
+                      <http://www.w3.org/2004/02/skos/core#definition> "A Geospatial Location at which an Adult Film Shoot is located."@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultTalentAgency
 :AdultTalentAgency rdf:type owl:Class ;
                    rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000443> ;
@@ -893,13 +900,6 @@ Further discussion of issues concerning fiction in the context of BFO and CCO ca
             rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000874> ;
             rdfs:label "Adult Video"@en ;
             <http://www.w3.org/2004/02/skos/core#definition> "A Video that carries some Adult Film."@en .
-
-
-###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/FilmingLocation
-:FilmingLocation rdf:type owl:Class ;
-                 rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000487> ;
-                 :ontologyDevelopmentNote "Definition and axioms needed."@en ;
-                 rdfs:label "Filming Location"@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/OfficialAdultFilmTitle
