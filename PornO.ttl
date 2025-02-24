@@ -58,6 +58,14 @@
 <http://purl.obolibrary.org/obo/BFO_0000199> owl:inverseOf <https://www.commoncoreontologies.org/ont00001874> .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO#hosts
+:hosts rdf:type owl:ObjectProperty ;
+       rdfs:domain :Server ;
+       rdfs:range <http://purl.obolibrary.org/obo/BFO_0000031> ;
+       :ontologyDevelopmentNote "Needs definition."@en ;
+       rdfs:label "hosts"@en .
+
+
 ###  https://www.commoncoreontologies.org/ont00001787
 <https://www.commoncoreontologies.org/ont00001787> rdf:type owl:ObjectProperty ;
                                                    rdfs:subPropertyOf <http://purl.obolibrary.org/obo/BFO_0000056> ;
@@ -545,6 +553,11 @@
 <http://purl.obolibrary.org/obo/BFO_0000001> rdfs:subClassOf owl:Thing .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO#Server
+:Server rdf:type owl:Class ;
+        rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000798> .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfAdultContentCreatorPosting
 :ActOfAdultContentCreatorPosting rdf:type owl:Class ;
                                  rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
@@ -689,7 +702,7 @@ For more on relational roles, see https://www.linkedin.com/in/gregfowlerphd/deta
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultContentCreatorPlatform
 :AdultContentCreatorPlatform rdf:type owl:Class ;
-                             rdfs:subClassOf :Website ;
+                             rdfs:subClassOf :AdultFilmWebsite ;
                              :ontologyDevelopmentNote "Definition and axioms needed"@en ;
                              rdfs:label "Adult Content Creator Platform"@en .
 
@@ -844,6 +857,14 @@ Further discussion of issues concerning fiction in the context of BFO and CCO ca
                  rdfs:label "Adult Film Studio"@en .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmWebsite
+:AdultFilmWebsite rdf:type owl:Class ;
+                  rdfs:subClassOf :Website ;
+                  :ontologyDevelopmentNote "A Website whose primary purpose is to host Adult Films."@en ,
+                                           "The definition of this class is provisional."@en ;
+                  rdfs:label "Adult Film Website"@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmingLocation
 :AdultFilmingLocation rdf:type owl:Class ;
                       rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000487> ;
@@ -882,7 +903,7 @@ Further discussion of issues concerning fiction in the context of BFO and CCO ca
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultTubeSite
 :AdultTubeSite rdf:type owl:Class ;
-               rdfs:subClassOf :Website ;
+               rdfs:subClassOf :AdultFilmWebsite ;
                :ontologyDevelopmentNote "Definition and axioms needed."@en ;
                rdfs:label "Adult Tube Site"@en .
 
