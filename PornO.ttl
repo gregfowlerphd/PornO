@@ -58,12 +58,27 @@
 <http://purl.obolibrary.org/obo/BFO_0000199> owl:inverseOf <https://www.commoncoreontologies.org/ont00001874> .
 
 
-###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO#hosts
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/hosts
 :hosts rdf:type owl:ObjectProperty ;
        rdfs:domain :Server ;
        rdfs:range <http://purl.obolibrary.org/obo/BFO_0000031> ;
        :ontologyDevelopmentNote "Needs definition."@en ;
        rdfs:label "hosts"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/isPortrayedBy
+:isPortrayedBy rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf <https://www.commoncoreontologies.org/ont00001873> ;
+               owl:inverseOf :portrays ;
+               :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+               rdfs:label "is portrayed by"@en .
+
+
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/portrays
+:portrays rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf <https://www.commoncoreontologies.org/ont00001938> ;
+          :ontologyDevelopmentNote "Needs definition and axioms."@en ;
+          rdfs:label "portrays"@en .
 
 
 ###  https://www.commoncoreontologies.org/ont00001787
@@ -553,11 +568,6 @@
 <http://purl.obolibrary.org/obo/BFO_0000001> rdfs:subClassOf owl:Thing .
 
 
-###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO#Server
-:Server rdf:type owl:Class ;
-        rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000798> .
-
-
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfAdultContentCreatorPosting
 :ActOfAdultContentCreatorPosting rdf:type owl:Class ;
                                  rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000566> ;
@@ -736,7 +746,7 @@ For more on relational roles, see https://www.linkedin.com/in/gregfowlerphd/deta
                              owl:onProperty <https://www.commoncoreontologies.org/ont00001938> ;
                              owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001262>
                            ] ;
-           :ontologyDevelopmentNote """The placement of this class is provisional. A Representational ICE must, by definition, represent some Entity, and it's not clear that every Adult Film does. While every Adult Film has a carrier with characteristics isomorphic to those of, e.g., a Person appearing in the Film (thus satisfying one of the \"represents\" definition's conditions for representing that Person), it would seem that not every Adult Film is about such a Person (in which case it wouldn't satisfy a further condition). Instead, in some cases, an Adult Film seems to be about a character played by such a Person rather than the Person themselves. And similar considerations seem to apply to other Entities an Adult Film might be thought to represent, including Acts of Adult Film Performance, sets, props, etc.
+           :ontologyDevelopmentNote """The placement of this class is provisional. A Representational ICE must, by definition, represent some Entity, and it's not clear that every Adult Film does. While every Adult Film has a carrier with characteristics isomorphic to those of, e.g., a Person appearing in the Film (thus satisfying one of the \"represents\" definition's conditions for representing that Person), it would seem that not every Adult Film is *about* such a Person (in which case it wouldn't satisfy a further condition). Instead, in some cases, an Adult Film seems to be about a character played by such a Person rather than the Person themselves. And similar considerations seem to apply to other Entities an Adult Film might be thought to represent, including Acts of Adult Film Performance, sets, props, etc.
 
 For similar reasons, the definition and axiom are also provisional.
 
@@ -923,6 +933,13 @@ Further discussion of issues concerning fiction in the context of BFO and CCO ca
             <http://www.w3.org/2004/02/skos/core#definition> "A Video that carries some Adult Film."@en .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/FictionalEntity
+:FictionalEntity rdf:type owl:Class ;
+                 rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
+                 rdfs:label "Fictional Entity"@en ;
+                 <http://www.w3.org/2004/02/skos/core#definition> "A Generically Dependent Continuant that is portrayed as being some way in a Work of Fiction."@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/OfficialAdultFilmTitle
 :OfficialAdultFilmTitle rdf:type owl:Class ;
                         owl:equivalentClass [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001014>
@@ -938,11 +955,18 @@ Further discussion of issues concerning fiction in the context of BFO and CCO ca
                         <http://www.w3.org/2004/02/skos/core#definition> "A Proper Name that designates an Adult Film."@en .
 
 
+###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/Server
+:Server rdf:type owl:Class ;
+        rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000798> ;
+        rdfs:label "Server"@en .
+
+
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/Website
 :Website rdf:type owl:Class ;
          rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
-         :ontologyDevelopmentNote "Needs definition and axioms."@en ;
-         rdfs:label "Website"@en .
+         :ontologyDevelopmentNote "Definition needs more detail."@en ;
+         rdfs:label "Website"@en ;
+         <http://www.w3.org/2004/02/skos/core#definition> "A Generically Dependent Continuant that is hosted on one or more Servers" .
 
 
 ###  https://www.commoncoreontologies.org/ont00000003
