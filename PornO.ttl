@@ -577,9 +577,13 @@
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfAdultFilmDirection
 :ActOfAdultFilmDirection rdf:type owl:Class ;
-                         rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000228> ;
-                         :ontologyDevelopmentNote "Definition and axioms needed."@en ;
-                         rdfs:label "Act of Adult Film Direction"@en .
+                         rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000228> ,
+                                         [ rdf:type owl:Restriction ;
+                                           owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000057> ;
+                                           owl:someValuesFrom <https://www.commoncoreontologies.org/ont00001262>
+                                         ] ;
+                         rdfs:label "Act of Adult Film Direction"@en ;
+                         <http://www.w3.org/2004/02/skos/core#definition> "A Planned Act consisting of a Person person controlling an Adult Film's artistic and dramatic aspects and, when applicable, visualizing the Adult Film Screenplay (or Script) while guiding Adult Film Crew Members and Adult Film Performers in the fulfillment of that vision, as prescribed by a contract between that Person and an Adult Film Studio."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/ActOfAdultFilmPerformance
@@ -772,9 +776,28 @@ Further discussion of issues concerning fiction in the context of BFO and CCO ca
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmDirectorRole
 :AdultFilmDirectorRole rdf:type owl:Class ;
-                       rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000023> ;
-                       :ontologyDevelopmentNote "Definition and axioms needed."@en ;
-                       rdfs:label "Adult Film Director Role"@en .
+                       rdfs:subClassOf <https://www.commoncoreontologies.org/ont00000506> ,
+                                       [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00000506>
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000197> ;
+                                                                owl:someValuesFrom [ owl:intersectionOf ( <https://www.commoncoreontologies.org/ont00001262>
+                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                            owl:onProperty <https://www.commoncoreontologies.org/ont00001787> ;
+                                                                                                            owl:someValuesFrom :ActOfAdultFilmDirection
+                                                                                                          ]
+                                                                                                        ) ;
+                                                                                     rdf:type owl:Class
+                                                                                   ]
+                                                              ]
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty <http://purl.obolibrary.org/obo/BFO_0000054> ;
+                                         owl:someValuesFrom :ActOfAdultFilmDirection
+                                       ] ;
+                       rdfs:label "Adult Film Director Role"@en ;
+                       <http://www.w3.org/2004/02/skos/core#definition> "A Contractor Role that inheres in a Person who bears an Agent Capability by virtue of that Person engaging in an Act of Adult Film Direction and which is realized both by that Person engaging in such Acts and by Acts of Payment in which they're compensated by a Film Studio for doing so."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/AdultFilmDistributor
@@ -937,7 +960,7 @@ Further discussion of issues concerning fiction in the context of BFO and CCO ca
 :FictionalEntity rdf:type owl:Class ;
                  rdfs:subClassOf <http://purl.obolibrary.org/obo/BFO_0000031> ;
                  rdfs:label "Fictional Entity"@en ;
-                 <http://www.w3.org/2004/02/skos/core#definition> "A Generically Dependent Continuant that is portrayed as being some way in a Work of Fiction."@en .
+                 <http://www.w3.org/2004/02/skos/core#definition> "A Generically Dependent Continuant that is created in the production of a Work of Fiction and that is portrayed as being some way in such a Work."@en .
 
 
 ###  http://www.semanticweb.org/glfow/ontologies/2024/10/PornO/OfficialAdultFilmTitle
